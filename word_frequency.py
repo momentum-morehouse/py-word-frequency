@@ -8,7 +8,10 @@ STOP_WORDS = [
 def print_word_freq(file):
     """Read in `file` and print out the frequency of words in that file."""
     # Your code will go here. You can write additional functions if you want, and call them inside this function.
-    pass
+    # first open the file
+    with open(file) as f:
+        words = f.readlines()
+        print(words)
 
 
 # This is an "incantation." You will not see it very often, and it needs to be here to be able to pass file names as arguments.
